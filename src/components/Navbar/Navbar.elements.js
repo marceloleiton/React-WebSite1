@@ -1,7 +1,7 @@
-import styles from 'styled-components'
+import styled from 'styled-components'
 //to to use my styled in terminal : npm install --save styled-components
 export const Nav = styled.nav`
-background: #101522;
+background: blue;
 height:80px;
 display: flex;
 justify-content: center;
