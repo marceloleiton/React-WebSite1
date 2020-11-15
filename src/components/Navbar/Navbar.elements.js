@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 //to to use my styled in terminal : npm install --save styled-components
 export const Nav = styled.nav`
 background: #0455BF;
-height:70px;
+height:80px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -68,33 +68,59 @@ export const NavItem = styled.li`
         height:80px;
         border-bottom: 2px solid transparent;
 
-        &hover{
-            border-bottom: 2px solid #4b59f7;
+        &:hover{
+            //color que se selecciona cuando se pasa e cursor sobre los links en la pagina
+            border-bottom: 3px solid  #0467FB;
         }
         @media screen and (max-width:960px){
             width:100%;
-            &hover{
+            &:hover{
                 border: none;
             }
         }
     
 `;
+//Links Navegacion parte web normal
 export const NavLinks = styled(Link)`
     color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    height: 80%;
-    @media screen and(max-width:960px){
-        text-align: center;
-        padding: 2rem;
-        width:100%;
-        display: table;
-        &hover{
-            color: #4b59f7;
-            transition: all 0.3s ease;
+    height: 100%;
+    //links Navegacion parte responsive
+        @media screen and (max-width:960px){
+            text-align: center;
+            align-items:center;
+            padding: 2rem;
+            width:100%;
+            display: table;
+            &:hover{
+                //color al momento de pasar el cursor por el menu responsive en los links
+                color: #0467FB;
+                transition: all 0.2s ease;
+            }
         }
-    }
+    `;
+    export const NavItemBtn= styled.li`
+        @media screen and (max-width:960px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            height:120px;
+        }
+    `;
+    export const NavBtnLink=styled(Link)`
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        text-decoration: none;
+        padding: 8px 16px;
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+
 `;
 

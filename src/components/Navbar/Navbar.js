@@ -1,7 +1,8 @@
 //rfce para crear automatico importar react funcion
-import React, {useState} from 'react'
-import { FaTimes, FaBars } from 'react-icons/fa'
-import { IconContext} from 'react-icons/lib'
+import React, {useState, useEffect} from 'react';
+import { FaTimes, FaBars } from 'react-icons/fa';
+import { IconContext} from 'react-icons/lib';
+import{Button} from '../../globalStyles';
 import {
     Nav,
     NavbarContainer,
@@ -10,12 +11,28 @@ import {
     MobileIcon,
     NavMenu,
     NavItem,
-    NavLinks
-} from './Navbar.elements'
+    NavLinks,
+    NavItemBtn,
+    NavBtnLink
+} from './Navbar.elements';
 
 const Navbar = () => {
-    const [click, setClick] = useState(false)
-    const handleClick = () => setClick(!click)
+const [click, setClick] = useState(false)
+const[button, setButton]= useState(true);
+const handleClick = () => setClick(!click);
+
+const showButton = () => {
+    if(window.innerWidth <= 960){
+        setButton(false)
+    }else{
+        setButton(true)
+    }
+};
+useEffect(()=> {
+    showButton();
+},[]);
+
+window.addEventListener('resize',showButton);
     return (
         <>
             <IconContext.Provider value={{color: '#fff'}}>
@@ -28,7 +45,7 @@ const Navbar = () => {
                         <MobileIcon onClick={handleClick}>
                             {click ? <FaTimes /> : <FaBars/>}
                         </MobileIcon>
-                        <NavMenu onClick={handleClick}>
+                        <NavMenu onClick={handleClick} click={click}>
                             <NavItem> 
                                 <NavLinks to='/'>inicio</NavLinks>
                             </NavItem>
@@ -40,8 +57,21 @@ const Navbar = () => {
                                 <NavLinks to='
                                 /servicios'>servicios</NavLinks>
                             </NavItem>
+                            <NavItemBtn>
+                                {button ? (
+                                    <NavBtnLink to="/contacto">
+                                        <Button primary>contacto</Button>
+                                    </NavBtnLink>
+                                ):(
+                                    <NavBtnLink to="/contacto">
+                                         <Button  fontBig primary>
+                                            contacto
+                                        </Button>
+                                    </NavBtnLink>
+                                )}
+                            </NavItemBtn>
                         </NavMenu>
-                </NavbarContainer>
+                    </NavbarContainer>
                 </Nav>
             </IconContext.Provider> 
         </>
