@@ -4,8 +4,8 @@ import { FaGratipay } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 //to to use my styled in terminal : npm install --save styled-components
 export const Nav = styled.nav`
-background: #0468BF;
-height:80px;
+background: #0455BF;
+height:70px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -61,7 +61,7 @@ export const NavMenu= styled.ul`
         left:${({click}) =>(click ? 0:'-100%')};
         opacity:1;
         transition:all 0.5s ease;
-        background: #101522; //color de la barra menu responsive
+        background: #0455BF; //color de la barra menu responsive
     }`;
 
 export const NavItem = styled.li`

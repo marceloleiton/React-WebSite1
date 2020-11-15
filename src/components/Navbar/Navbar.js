@@ -28,16 +28,17 @@ const Navbar = () => {
                         <MobileIcon onClick={handleClick}>
                             {click ? <FaTimes /> : <FaBars/>}
                         </MobileIcon>
-            //NavMenu es la que contiene los navegadores de la página y la redirección        
                         <NavMenu onClick={handleClick}>
-                            <NavItem>
+                            <NavItem> 
                                 <NavLinks to='/'>inicio</NavLinks>
                             </NavItem>
-                        </NavMenu>
-                        <NavMenu onClick={handleClick}>
                             <NavItem>
                                 <NavLinks to='
                                 /nosotros'>nosotros</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to='
+                                /servicios'>servicios</NavLinks>
                             </NavItem>
                         </NavMenu>
                 </NavbarContainer>
