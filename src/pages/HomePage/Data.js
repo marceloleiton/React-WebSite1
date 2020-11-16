@@ -9,7 +9,7 @@ export const homeObjOne={
     headLine:'Calli de Tlasothlalistli (Casa del Amor) A.C',
     lightText:true, 
     topLine:'Oganización no gubernamental (ONG)',
-    img: require('../../images/61.jpg'),
+    img: require('../../images/hola.jpg'),
     alt:'Image',
     start:''
 };
