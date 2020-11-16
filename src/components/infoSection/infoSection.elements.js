@@ -28,6 +28,7 @@ export const InfoColumn = styled.div`
         justify-content: center;
     }
 `;
+
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
@@ -36,4 +37,42 @@ export const TextWrapper = styled.div`
         padding-bottom:65px;
     }
 
+`;
+//contenedor de top line, linea de arriba de la descripción en contenedor
+export const TopLine = styled.div`
+    color: ${({ lightTopLine }) => (lightTopLine ? '#a9b3c1' : '#4B59F7')};
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 1.4px;
+    margin-bottom: 16px;
+`;
+//contenedor de heading
+export const Heading = styled.h1`
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 1.1;
+    color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#1c2237')};
+`;
+//contenedor de subtitulo
+export const SubTitle = styled.p`
+    max-width: 440px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 24px;
+    color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1': '#1c2237')};
+`;
+//contenedor de imagen
+export const ImgWrapper = styled.div`
+    max-width: 550px;
+    display: flex;
+    justify-content: ${({start})=>(start ?'flex-start': 'flex-end')};
+`;
+//imagen del contenedor
+export const Img = styled.img`
+    padding-right:0;
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    max-height: 500px;
 `;

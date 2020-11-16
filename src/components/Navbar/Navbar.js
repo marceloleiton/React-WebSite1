@@ -40,7 +40,7 @@ window.addEventListener('resize',showButton);
                 <NavbarContainer>
                         <NavLogo to='/'>
                             <NavIcon/>
-                        LACASADELAMOR
+                        La Casa del Amor
                         </NavLogo>
                         <MobileIcon onClick={handleClick}>
                             {click ? <FaTimes /> : <FaBars/>}
