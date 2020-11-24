@@ -1,10 +1,29 @@
 import styled from 'styled-components';
 //contenedor 
+
+//export const InfoSec = styled.div`
+   // color: #95bed8; //color al marcar algo en la página
+ //   padding: 40px 0;
+    //primer color y segundo color del fondo del contenedor principal 
+//    background: ${({ lightBg }) => (lightBg ? '#fff' : '#ffff')};
+//`;
+import ImgBg from '../../images/principal.jpg'
+import ImgBgMovil from '../../images/portada.jpg'
 export const InfoSec = styled.div`
     color: #95bed8; //color al marcar algo en la página
     padding: 40px 0;
     //primer color y segundo color del fondo del contenedor principal 
-    background: ${({ lightBg }) => (lightBg ? '#fff' : '#ffff')};
+    background: linear-gradient(to right, rgba(0,0,0,0.6),
+    rgba(0,0,0,0.12)), url(${ImgBg});
+    height: 80vh;
+    background-position: center;
+    background-size:cover;
+    @media screen and (max-width: 768px){
+        background: linear-gradient(to right, rgba(0,0,0,0.3),
+    rgba(0,0,0,0.1)), url(${ImgBgMovil});
+        padding-bottom:65px;
+        height: 520px;
+    }
 `;
 export const InfoRow = styled.div`
     display: flex;
@@ -15,6 +34,7 @@ export const InfoRow = styled.div`
 `;
 
 export const InfoColumn = styled.div`
+    margin-top: 10px; //separacion del texto de inicio en la portada principal
     margin-bottom: 15px;
     padding-right: 15px;
     padding-left: 15px;
@@ -33,29 +53,40 @@ export const InfoColumn = styled.div`
 // espacio del texto en el contenedor
 export const TextWrapper = styled.div`
     max-width: 540px;
-    padding-top: 0;
+    padding-top: 100px;
     padding-bottom:60px;
     @media screen and (max-width: 768px){
+        padding-top: 10px;
         padding-bottom:65px;
     }
 
 `;
 //contenedor de top line, " texto que va arriba de titulo"
 export const TopLine = styled.div`
-    color: ${({ lightTopLine }) => (lightTopLine ? '#95bed8' : '#4B59F7')};
+    color: ${({ lightTopLine }) => (lightTopLine ? '#ffff' : '#4B59F7')};
     font-size: 18px;
-    line-height: 16px;
+    line-height: 10px;
     letter-spacing: 1.4px;
     margin-bottom: 16px;
+     @media screen and (max-width: 768px){
+        font-size: 12px;
+        text-align: center;
+    }
+    
 `;
 // TITULO
 export const Heading = styled.h1`
     margin-bottom: 24px;
-    font-size: 48px;
+    font-size: 50px;
     line-height: 1.1;
 
     // primera opcion de colores : texto -> TITULO
-    color: ${({ lightText }) => (lightText ? '#95bed8' : '#1c2237')};
+    color: ${({ lightText }) => (lightText ? '#ffff' : '#1c2237')};
+
+    @media screen and (max-width: 768px){
+        font-size: 30px;
+        text-align: center;
+    }
 `;
 
 // SUBTITULO
@@ -64,7 +95,11 @@ export const SubTitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: ${({ lightTextDesc }) => (lightTextDesc ? '#95bed8': '#1c2237')};
+    color: ${({ lightTextDesc }) => (lightTextDesc ? '#ffff': '#1c2237')};
+     @media screen and (max-width: 768px){
+        font-size: 15px;
+        text-align: center;
+    }
 `;
 //contenedor de imagen
 export const ImgWrapper = styled.div`

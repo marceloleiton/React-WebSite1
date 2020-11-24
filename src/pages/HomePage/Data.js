@@ -8,9 +8,9 @@ export const homeObjOne={
     description:'Tiene como finalidad presentar una propuesta de valores humanos universales de integración cultural para ayudar a la transformación del hombre mediante el servicio a los demás y la autodesignación que le conducza al conocimiento de su verdadera realizad.',
     headLine:'Calli de Tlasothlalistli (Casa del Amor) A.C',
     lightText:true, 
-    topLine:'Oganización no gubernamental (ONG)',
+    topLine:'Oganización no gubernamental ONG',
     
-    alt: 'Image',
-    img: require('../../images/1.png').default,
+    //alt: 'Image',
+    //img: require('../../images/1.png').default,
     start: ''
 };

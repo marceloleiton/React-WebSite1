@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 //Navegación principal "menú de la página"
 export const Nav = styled.nav`
-background: #0455BF; //color del menu de la página
+background:#0455BF ; // color del menu de la página
 height:80px;
 display: flex;
 justify-content: center;
