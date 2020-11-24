@@ -21,9 +21,11 @@ const GlobalStyle = createGlobalStyle`
         padding-left: 30px;
     }
 `;
+
+//estilos de los botones
 export const Button=styled.button`
     border-radius: 4px;
-    background:${({ primary }) => (primary ? '#0467FB' : '#143C8C')};
+    background:${({ primary }) => (primary ? '#0467FB' : '#0467FB')};
     white-space: nowrap;
     padding:${({big})=>(big? '12px 64px': '10px 20px')};
     color: #fff;
@@ -31,11 +33,11 @@ export const Button=styled.button`
     outline:none;
     border:none;
     cursor: pointer;
-
+    //al momento de pasar el cursor sobre el boton
     &:hover{
         transition: all 0.3s ease-out;
         background: #fff;
-        background: ${({ primary }) => (primary ? '#143C8C' : '#0467FB')};
+        background: ${({ primary }) => (primary ? '#0467FB' : '#143C8C')};
     }
 
     @media screen and (max-width: 960px){

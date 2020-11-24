@@ -6,8 +6,7 @@ const Home = () => {
     return (
         <>
           <InfoSection {...homeObjOne} /> 
-        </>
+        </> 
     );
 };
-
 export default Home;

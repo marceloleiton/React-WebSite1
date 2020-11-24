@@ -3,8 +3,10 @@ import { Container } from '../../globalStyles';
 import { FaGratipay } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 //to to use my styled in terminal : npm install --save styled-components
+
+//Navegación principal "menú de la página"
 export const Nav = styled.nav`
-background: #0455BF;
+background: #0455BF; //color del menu de la página
 height:80px;
 display: flex;
 justify-content: center;
@@ -22,6 +24,9 @@ height:80px;
 
 ${Container}
 `;
+
+
+//redireccionamiento en el logo de la página
 export const NavLogo= styled(Link)`
 color:#fff;
 justify-self: flex-start;
@@ -30,6 +35,7 @@ text-decoration: none;
 display: flex;
 align-items: center;
 `;
+//logo de la página
 export const NavIcon = styled(FaGratipay)`
 margin-right:0.5rem;
 `;
@@ -45,11 +51,16 @@ export const MobileIcon = styled.div`
         cursor: pointer;
 }
 `;
+
+
+//menú de navegación
 export const NavMenu= styled.ul`
     display: flex;
     align-items: center;
     list-style: none;
     text-align: center;
+
+    //formato movil
     @media screen and (max-width:960px){
         display: flex;
         flex-direction: column;
@@ -64,6 +75,7 @@ export const NavMenu= styled.ul`
         background: #0455BF; //color de la barra menu responsive
     }`;
 
+//lo que contiene el manu de navegación
 export const NavItem = styled.li`
         height:80px;
         border-bottom: 2px solid transparent;
@@ -72,6 +84,7 @@ export const NavItem = styled.li`
             //color que se selecciona cuando se pasa e cursor sobre los links en la pagina
             border-bottom: 3px solid  #0467FB;
         }
+        //formato movil
         @media screen and (max-width:960px){
             width:100%;
             &:hover{
@@ -82,7 +95,7 @@ export const NavItem = styled.li`
 `;
 //Links Navegacion parte web normal
 export const NavLinks = styled(Link)`
-    color: #fff;
+    color: #fff; //color blanco para los destinos a paginas en la vista normal
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -111,6 +124,8 @@ export const NavLinks = styled(Link)`
             height:120px;
         }
     `;
+
+
     export const NavBtnLink=styled(Link)`
         display: flex;
         justify-content: center;

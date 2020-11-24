@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 //contenedor 
 export const InfoSec = styled.div`
-    color: #fff;
-    padding: 100px 0;
-    background: ${({ lightBg}) => (lightBg ? '#fff' : '#101522')};
+    color: #95bed8; //color al marcar algo en la página
+    padding: 40px 0;
+    //primer color y segundo color del fondo del contenedor principal 
+    background: ${({ lightBg }) => (lightBg ? '#fff' : '#ffff')};
 `;
 export const InfoRow = styled.div`
     display: flex;
@@ -29,6 +30,7 @@ export const InfoColumn = styled.div`
     }
 `;
 
+// espacio del texto en el contenedor
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
@@ -38,28 +40,31 @@ export const TextWrapper = styled.div`
     }
 
 `;
-//contenedor de top line, linea de arriba de la descripción en contenedor
+//contenedor de top line, " texto que va arriba de titulo"
 export const TopLine = styled.div`
-    color: ${({ lightTopLine }) => (lightTopLine ? '#a9b3c1' : '#4B59F7')};
+    color: ${({ lightTopLine }) => (lightTopLine ? '#95bed8' : '#4B59F7')};
     font-size: 18px;
     line-height: 16px;
     letter-spacing: 1.4px;
     margin-bottom: 16px;
 `;
-//contenedor de heading
+// TITULO
 export const Heading = styled.h1`
     margin-bottom: 24px;
     font-size: 48px;
     line-height: 1.1;
-    color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#1c2237')};
+
+    // primera opcion de colores : texto -> TITULO
+    color: ${({ lightText }) => (lightText ? '#95bed8' : '#1c2237')};
 `;
-//contenedor de subtitulo
+
+// SUBTITULO
 export const SubTitle = styled.p`
     max-width: 440px;
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1': '#1c2237')};
+    color: ${({ lightTextDesc }) => (lightTextDesc ? '#95bed8': '#1c2237')};
 `;
 //contenedor de imagen
 export const ImgWrapper = styled.div`
