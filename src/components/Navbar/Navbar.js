@@ -47,25 +47,32 @@ window.addEventListener('resize',showButton);
                         </MobileIcon>
                         <NavMenu onClick={handleClick} click={click}>
                             <NavItem> 
-                                <NavLinks to='/'>inicio</NavLinks>
+                                <NavLinks to='/'>INICIO</NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks to='
-                                /nosotros'>nosotros</NavLinks>
+                                /nosotros'>NOSOTROS</NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks to='
-                                /servicios'>servicios</NavLinks>
+                                /servicios'>NUESTRAS ACCIONES</NavLinks>
                             </NavItem>
+
+                            <NavItem>
+                                <NavLinks to='
+                                /servicios'>FOTOGRAFÍAS</NavLinks>
+                            </NavItem>
+
+
                             <NavItemBtn>
                                 {button ? (
                                     <NavBtnLink to="/contacto">
-                                        <Button primary>contacto</Button>
+                                        <Button primary>CONTACTO</Button>
                                     </NavBtnLink>
                                 ):(
                                     <NavBtnLink to="/contacto">
                                          <Button  fontBig primary>
-                                            contacto
+                                            CONTACTO
                                         </Button>
                                     </NavBtnLink>
                                 )}

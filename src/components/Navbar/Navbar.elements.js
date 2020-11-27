@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 //Navegación principal "menú de la página"
 export const Nav = styled.nav`
 background:#0455BF ; // color del menu de la página
-height:67px; //ancho del menu
+height:72px; //ancho del menu
 display: flex;
 justify-content: center;
 align-items: center;
@@ -65,9 +65,9 @@ export const NavMenu= styled.ul`
         display: flex;
         flex-direction: column;
         width:100%;
-        height:90vh;
+        height:95vh;
         position: absolute;
-        top:80px;
+        top:70px;
         //barra de menu responsive, si se clickea se activa, pero si el valor del click es cero quiero se desaparezca
         left:${({click}) =>(click ? 0:'-100%')};
         opacity:1;

@@ -1,20 +1,21 @@
 import styled from 'styled-components';
 //contenedor 
-
-//export const InfoSec = styled.div`
-   // color: #95bed8; //color al marcar algo en la página
- //   padding: 40px 0;
+/*
+export const InfoSec = styled.div`
+    color: #95bed8; //color al marcar algo en la página
+    padding: 40px 0;
     //primer color y segundo color del fondo del contenedor principal 
-//    background: ${({ lightBg }) => (lightBg ? '#fff' : '#ffff')};
-//`;
+    background: ${({ lightBg }) => (lightBg ? '#fff' : '#ffff')};
+`;
+*/
 import ImgBg from '../../images/principal-3.jpg'
 import ImgBgMovil from '../../images/portada.jpg'
 export const InfoSecImg = styled.div`
     color: #95bed8; //color al marcar algo en la página
     padding: 100px 0;
     //primer color y segundo color del fondo del contenedor principal 
-    background: linear-gradient(to right, rgba(0,0,0,0.5),
-    rgba(0,0,0,0.12)), url(${ImgBg});
+    background: linear-gradient(to right, rgba(0,0,0,0.3),
+    rgba(0,0,0,0.10)), url(${ImgBg});
     height: 100vh;
     background-position: center;
     background-size:cover;
