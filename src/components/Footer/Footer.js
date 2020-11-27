@@ -18,13 +18,12 @@ const Footer = () => {
         <FooterContainer>
             <FooterSubscription>
                 <FooterSubHeading>
-                    Si estás interesado en nuestra labor y deseas tener mayor información, dejanos
-                    tu correo y te estaremos contando la labor que realizamos en mayor detalle !
+                    Si estás interesado en nuestro trabajo ¡Suscribete!
                 </FooterSubHeading>
                 <FooterSubText> Solo ingresa tu correo y te contactaremos
                     </FooterSubText>
                 <Form>
-                    <FormInput name="email" type="email" placeholder="Ingresar  email" />
+                    <FormInput name="email" type="email" placeholder="Ingrsar correo aquí" />
                         <Button fontBig>Suscribete</Button>  
                 </Form>
             </FooterSubscription>
