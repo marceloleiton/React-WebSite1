@@ -7,11 +7,11 @@ import { Link } from 'react-router-dom';
 //Navegación principal "menú de la página"
 export const Nav = styled.nav`
 background:#0455BF ; // color del menu de la página
-height:80px;
+height:67px; //ancho del menu
 display: flex;
 justify-content: center;
 align-items: center;
-font-size: 1.2rem;
+font-size: 1.0rem; //tamaño , cercania de las letras del nav
 position: sticky;
 top: 0;
 z-index: 99;
@@ -37,7 +37,7 @@ align-items: center;
 `;
 //logo de la página
 export const NavIcon = styled(FaGratipay)`
-margin-right:0.5rem;
+margin-right:0.5rem; //separacion del texto del logo con el logo
 `;
 export const MobileIcon = styled.div`
     display:none;
@@ -131,7 +131,7 @@ export const NavLinks = styled(Link)`
         justify-content: center;
         align-items:center;
         text-decoration: none;
-        padding: 8px 16px;
+        padding: 8px 16px; //separacion del contacto en la lavegacion
         height: 100%;
         width: 100%;
         border: none;

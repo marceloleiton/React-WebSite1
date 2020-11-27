@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import { Container, Button } from "../../globalStyles";
 import {
-    InfoSec,
+    InfoSecImg,
     InfoRow,
     InfoColumn,
     TextWrapper,
@@ -17,7 +17,7 @@ const InfoSection =({ primary,lightBg, imgStart,lightTopLine,lightTextDesc,
     buttonLabel,description,headLine,lightText,topLine,img,alt,start}) =>{
     return (
         <>
-            <InfoSec lightBg={lightBg}>
+            <InfoSecImg lightBg={lightBg}>
                 <Container>
                     <InfoRow imgStart={imgStart}>
                         <InfoColumn>
@@ -37,7 +37,7 @@ const InfoSection =({ primary,lightBg, imgStart,lightTopLine,lightTextDesc,
                         </InfoColumn>
                     </InfoRow>
                 </Container>
-            </InfoSec>            
+            </InfoSecImg>            
         </>
 
     );

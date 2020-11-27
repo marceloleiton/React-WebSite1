@@ -7,19 +7,19 @@ import styled from 'styled-components';
     //primer color y segundo color del fondo del contenedor principal 
 //    background: ${({ lightBg }) => (lightBg ? '#fff' : '#ffff')};
 //`;
-import ImgBg from '../../images/principal.jpg'
+import ImgBg from '../../images/principal-3.jpg'
 import ImgBgMovil from '../../images/portada.jpg'
-export const InfoSec = styled.div`
+export const InfoSecImg = styled.div`
     color: #95bed8; //color al marcar algo en la página
-    padding: 40px 0;
+    padding: 100px 0;
     //primer color y segundo color del fondo del contenedor principal 
-    background: linear-gradient(to right, rgba(0,0,0,0.6),
+    background: linear-gradient(to right, rgba(0,0,0,0.5),
     rgba(0,0,0,0.12)), url(${ImgBg});
-    height: 80vh;
+    height: 100vh;
     background-position: center;
     background-size:cover;
     @media screen and (max-width: 768px){
-        background: linear-gradient(to right, rgba(0,0,0,0.3),
+        background: linear-gradient(to right, rgba(0,0,0,0.25),
     rgba(0,0,0,0.1)), url(${ImgBgMovil});
         padding-bottom:65px;
         height: 520px;
