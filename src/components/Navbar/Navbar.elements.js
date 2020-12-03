@@ -11,10 +11,10 @@ height:72px; //ancho del menu
 display: flex;
 justify-content: center;
 align-items: center;
-font-size: 1.0rem; //tamaño , cercania de las letras del nav
+font-size: 1.2rem; //tamaño , cercania de las letras del nav
 position: sticky;
 top: 0;
-z-index: 99;
+z-index: 999;
 
 `
 export const NavbarContainer= styled(Container)`
@@ -34,10 +34,12 @@ cursor: pointer;
 text-decoration: none;
 display: flex;
 align-items: center;
+font-size: 1.5rem; //# La casa del amor ----> tamaño texto en el icono
 `;
 //logo de la página
 export const NavIcon = styled(FaGratipay)`
-margin-right:0.5rem; //separacion del texto del logo con el logo
+    margin-right:0.5rem; //separacion del texto del logo con el logo
+    font-size: 1.8rem; //tamaño del logo
 `;
 export const MobileIcon = styled.div`
     display:none;

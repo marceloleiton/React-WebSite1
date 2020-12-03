@@ -1,15 +1,28 @@
 import styled from 'styled-components';
 //contenedor 
-/*
+import ImgBg from '../../images/principal-3.jpg'
+import ImgBgMovil from '../../images/portada.jpg'
+
+
+//CONTENEDOR InfoSectionNormal --> contiene imagen
 export const InfoSec = styled.div`
     color: #95bed8; //color al marcar algo en la página
     padding: 40px 0;
     //primer color y segundo color del fondo del contenedor principal 
-    background: ${({ lightBg }) => (lightBg ? '#fff' : '#ffff')};
+    background: ${({ lightBg }) => (lightBg ? '#95bed8' : '#95bed8')};
 `;
-*/
-import ImgBg from '../../images/principal-3.jpg'
-import ImgBgMovil from '../../images/portada.jpg'
+
+//CONTENEDOR InfoSectionNormal --> contiene imagen
+export const InfoRow = styled.div`
+    display: flex;
+    margin: 0 -15px -15px -15px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')};
+   
+`;
+
+//CONTENEDOR InfoSectionPrincipal ---> contiene la imagen
 export const InfoSecImg = styled.div`
     color: #95bed8; //color al marcar algo en la página
     padding: 100px 0;
@@ -25,13 +38,6 @@ export const InfoSecImg = styled.div`
         padding-bottom:65px;
         height: 520px;
     }
-`;
-export const InfoRow = styled.div`
-    display: flex;
-    margin: 0 -15px -15px -15px;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: ${({imgStart}) => (imgStart ? 'row-reverse' : 'row')};
 `;
 
 export const InfoColumn = styled.div`
