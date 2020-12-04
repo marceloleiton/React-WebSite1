@@ -52,15 +52,6 @@ const Footer = () => {
                         <FooterLinks to='/'>Dirección</FooterLinks>
                     </FooterLinkItems>
                 </FooterLinksWrapper>
-                <FooterLinksWrapper>  
-                    <FooterLinkItems>
-                        <FooterLinksTitle>Contacto</FooterLinksTitle>
-                        <FooterLinks to='/'>+56959645803</FooterLinks>
-                        <FooterLinks to='/'>marceloleiton1997@gmail.com</FooterLinks>
-                        <FooterLinks to='/'>Dirección</FooterLinks>
-                    </FooterLinkItems>
-
-                </FooterLinksWrapper>
             </FooterLinksContainer>
 
             <SocialMedia>

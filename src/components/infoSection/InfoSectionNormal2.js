@@ -11,12 +11,14 @@ import {
     TopLine,
     Heading,
     SubTitle,
+    SubTitle2,
+    SubTitle3,
     ImgWrapper,
     Img
-} from './InfoSection.elements';
+} from './InfoSection.3elements';
 
 const InfoSectionNormal =({ primary,lightBg, imgStart,lightTopLine,lightTextDesc,
-    buttonLabel, description,headLine,lightText,topLine,img,alt,start}) =>{
+    buttonLabel, description, description2,description3,headLine,lightText,topLine,img,alt,start}) =>{
     return (
         <>
             <InfoSec lightBg={lightBg}>
@@ -24,10 +26,12 @@ const InfoSectionNormal =({ primary,lightBg, imgStart,lightTopLine,lightTextDesc
                 <Container>
                     <InfoRow imgStart={imgStart}>
                         <InfoColumn>
-                            <TextWrapper>     
-                                <Heading lightText={lightText}>{headLine}</Heading>                        
+                            <TextWrapper>    
+                                <Heading lightText={lightText}>{headLine}</Heading>                                           
                                 <SubTitle lightTextDesc={lightTextDesc}>{description}</SubTitle>
-                            </TextWrapper>
+                                <SubTitle2 lightTextDesc={lightTextDesc}>{description2}</SubTitle2>
+                                <SubTitle3 lightTextDesc={lightTextDesc}>{description3}</SubTitle3>
+                            </TextWrapper>             
                         </InfoColumn>
                         <InfoColumn>
                             <ImgWrapper start={start}>

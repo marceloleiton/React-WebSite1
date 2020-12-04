@@ -7,7 +7,7 @@ import ImgBgMovil from '../../images/portada.jpg'
 //CONTENEDOR InfoSectionNormal --> contiene imagen
 export const InfoSec = styled.div`
     color: #95bed8; //color al marcar algo en la página
-    padding: 15px ;
+    padding: 5px 0;
     //primer color y segundo color del fondo del contenedor principal 
     background: ${({ lightBg }) => (lightBg ? '#58abdf' : '#3d85d1')};
 `;
@@ -84,8 +84,8 @@ export const TopLine = styled.div`
 // TITULO
 export const Heading = styled.h1`
     margin-bottom: 24px;
-    font-size: 48px;
-    line-height: 1;
+    font-size: 50px;
+    line-height: 1.1;
 
     // primera opcion de colores : texto -> TITULO
     color: ${({ lightText }) => (lightText ? '#ffff' : '#1c2237')};
@@ -103,12 +103,41 @@ export const SubTitle = styled.p`
     font-size: 20px;
     line-height: 23px;
     text-align: justify;
-    color: ${({ lightTextDesc }) => (lightTextDesc ? '#ffff': '#1c2237')};
+    color: ${({ lightTextDesc }) => (lightTextDesc ? '#ffff' : '#1c2237')};
      @media screen and (max-width: 768px){
         font-size: 15px;
         text-align: center;
     }
 `;
+
+// SUBTITULO
+export const SubTitle2 = styled.p`
+    max-width: 400px;
+    margin-bottom: 35px;
+    font-size: 19px;
+    line-height: 24px;
+    text-align: justify;
+    color: ${({ lightTextDesc }) => (lightTextDesc ? '#ffff' : '#1c2237')};
+     @media screen and (max-width: 768px){
+        font-size: 15px;
+        text-align: center;
+    }
+`;
+
+// SUBTITULO
+export const SubTitle3 = styled.p`
+    max-width: 400px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: justify;
+    color: ${({ lightTextDesc }) => (lightTextDesc ? '#ffff' : '#1c2237')};
+     @media screen and (max-width: 768px){
+        font-size: 15px;
+        text-align: center;
+    }
+`;
+
 
 //contenedor de imagen
 export const ImgWrapper = styled.div`

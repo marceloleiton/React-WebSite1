@@ -33,7 +33,7 @@ export const FooterSubHeading= styled.p`
 
 export const FooterSubText = styled.p`
     margin-bottom: 24px;
-    font-size: 20px;
+    font-size: 18px;
 
 `;
 export const Form = styled.form`
@@ -80,6 +80,7 @@ export const FooterLinksWrapper = styled.div`
 
     @media screen and (max-width: 820px){
         flex-direction: column;
+        max-width: 120px;
     }
 `;
 
@@ -117,7 +118,7 @@ export const FooterLinks =styled(Link)`
 `;
 
 export const SocialMedia = styled.section`
-    max-width:1000px;
+    max-width:920px;
     width: 100%;
 `;
 
