@@ -9,7 +9,7 @@ export const InfoSec = styled.div`
     color: #95bed8; //color al marcar algo en la página
     padding: 40px 0;
     //primer color y segundo color del fondo del contenedor principal 
-    background: ${({ lightBg }) => (lightBg ? '#95bed8' : '#95bed8')};
+    background: ${({ lightBg }) => (lightBg ? '#58abdf' : '#3d85d1')};
 `;
 
 //CONTENEDOR InfoSectionNormal --> contiene imagen
@@ -102,12 +102,30 @@ export const SubTitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
+    text-align: justify;
     color: ${({ lightTextDesc }) => (lightTextDesc ? '#ffff': '#1c2237')};
      @media screen and (max-width: 768px){
         font-size: 15px;
         text-align: center;
     }
 `;
+
+
+// SUBTITULO
+export const SubTitle2 = styled.p`
+    max-width: 1000px;
+    margin-bottom: 35px;
+    font-size: 23px;
+    line-height: 24px;
+    text-align: center;
+    color: ${({ lightTextDesc }) => (lightTextDesc ? '#ffff' : '#1c2237')};
+     @media screen and (max-width: 768px){
+        font-size: 15px;
+        text-align: center;
+    }
+`;
+
+
 //contenedor de imagen
 export const ImgWrapper = styled.div`
     max-width: 550px;

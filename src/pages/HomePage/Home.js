@@ -1,12 +1,12 @@
 import React from 'react';
-import { homeObjOne, homeObjTwo} from './Data';
+import { ContenedorInicio, ContenedorNosotros} from './Data';
 import { InfoSectionPrincipal, InfoSectionNormal } from '../../components';
 
 const Home = () => {
     return (
         <>
-        <InfoSectionPrincipal {...homeObjOne} />
-        <InfoSectionNormal {...homeObjTwo} />  
+            <InfoSectionPrincipal {...ContenedorInicio} />
+            <InfoSectionNormal {...ContenedorNosotros} />  
         </> 
     );
 };

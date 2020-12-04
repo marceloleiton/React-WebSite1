@@ -1,4 +1,4 @@
-export const homeObjOne={
+export const ContenedorInicio={
     lightBg:false,
     primary:false, 
     imgStart: '',
@@ -15,7 +15,7 @@ export const homeObjOne={
     start: ''
 };
 
-export const homeObjTwo = {
+export const ContenedorNosotros = {
     lightBg: false,
     primary: true,
     imgStart: 'start',
@@ -23,7 +23,7 @@ export const homeObjTwo = {
     lightTextDesc: true,
     buttonLabel: 'contactanos',
     description: 'Tiene como finalidad presentar una propuesta de valores humanos universales de integración cultural para ayudar a la transformación del hombre mediante el servicio a los demás y la autodesignación que le conducza al conocimiento de su verdadera realizad.',
-    headLine: 'Calli de Tlasothlalistli (Casa del Amor) A.C',
+    headLine: 'Sobre Nosotros',
     lightText: true,
     topLine: 'Oganización no gubernamental ONG',
 

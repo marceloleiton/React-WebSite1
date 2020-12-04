@@ -50,17 +50,16 @@ window.addEventListener('resize',showButton);
                                 <NavLinks to='/'>INICIO</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='
-                                /nosotros'>NOSOTROS</NavLinks>
+                                <NavLinks to='servicios'>SERVICIOS</NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks to='
-                                /servicios'>NUESTRAS ACCIONES</NavLinks>
+                                /'>NUESTRAS ACCIONES</NavLinks>
                             </NavItem>
 
                             <NavItem>
                                 <NavLinks to='
-                                /servicios'>FOTOGRAFÍAS</NavLinks>
+                                /'>FOTOGRAFÍAS</NavLinks>
                             </NavItem>
 
 
